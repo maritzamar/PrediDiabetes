@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PreDiabetes</title>
+
+    <!-- Style -->
+	{% include "style.html" %}
+  </head>
+
+  <body>
+      <!-- Navbar -->
+	   {% include "navbar.html" %}
+    <!--home_section-->
+        <section id="home_section" class="home">
+            <div class="hero_wrapper">
+                <div class="container">
+                    <div class="home_section">
+                        <div class="row">
+                            <div class="col-lg-5 col-sm-7">
+                                <div class="home_text"> 
+                                    <h2>Prediksi <strong>Diabetes</strong></h2>
+                                    <p>Segera Cek Kesehatan Anda!!</p>
+                                    <a href="/check" class="tbl btn-primary" role="button">CHECK</a> 
+                                    <a href="/test" class="tbl btn-primary" role="button">TEST</a>
+                                </div>
+                                
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </section>
+  <!--home_section--> 
+
+  <!--artikel-->
+  <section id="artikel">
+    <div class="text">
+      <div class="container">
+        <h2>Artikel Diabetes</h2>
+        <div class="teks">
+        <div class="row">
+              <div class=" col-lg-7 col-md-7 col-sm-7 col-xs-12 pull-left">
+                <div class="p_diabetes">
+                    <img src="{{ url_for('static', filename='Untitled-1.png') }}" class="img_p" alt="title"/>
+                    <div class="bannerImg">
+                        
+                      </div>
+                    <h3>Pengertian Penyakit Diabetes</h3><br/> 
+                    <p> Diabetes merupakan salah satu penyakit mematikan yang menjadi momok bagi semua orang. Hal ini dikarenakan penyakit diabetes berlangsung seumur hidup dan dapat menimbulkan sejumlah komplikasi bila penderita tidak mengendalikannya. Maka tak heran kalau penyakit diabetes semakin menjadi perhatian, karena jumlah penderitanya terus bertambah. Menurut WHO, sudah ada sekitar 150 juta orang yang mengalami diabetes di seluruh belahan dunia.
+                    <br></br>
+                    Pengertian penyakit diabetes adalah suatu penyakit yang terjadi akibat kegagalan sel pankreas dalam memproduksi insulin. Hormon insulin inilah yang berfungsi dalam mengatur penggunaan gula untuk aktivitas sel-sel di dalam tubuh.
+                    <br></br>
+                    Nah, pada pasokan insulin yang tidak memadai ini nantinya akan menyebabkan kadar gula darah cenderung tinggi. Pada pengertian penyakit diabetes ini apabila kondisinya secar terus-menerus dapat menyebakan kerusakan pada dinding pembuluh darah dan mengakibatkan komplikasi pada berbagai organ penting di dalam tubuh seperti jantung koroner, stroke, obesitas, serta gangguan pada mata, ginjal, dan saraf.
+                    <br></br>
+                    Selain itu, pengertian penyakit diabetes juga dapat menyebabkan terjadinya fluktuasi kadar gula darah dalam tubuh. Hal ini dapat mengakibatkan penurunan (hipoglikemia) atau peningkatan kadar gula darah (hiperglikemia) secara tiba-tiba.</p>
+                </div>
+                <div class=" col-lg-4 col-md-4 col-sm-4 col-xs-12 pull-right"><img src="img/about-img.jpg" class="img-circle delay-03s animated wow zoomIn" alt=""></div>
+              </div>
+          
+          
+        </div>
+      </div> 
+      </div>
+    </section>
+    <!--artikel--> 
+
+  </body>
+</html>

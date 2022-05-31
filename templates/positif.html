@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- <link rel="shortcut icon" href="{{ url_for('static', filename='img/logo.png') }}" /> -->
+  <title>Diabecheck!</title>
+  <!-- <link rel="stylesheet" href="{{ url_for('static',filename='styles/style.css') }}" /> -->
+</head>
+
+<body>
+  <div class="results">
+    <div class="result">
+      <h3>Hasilnya</h3>
+      <p>Hi hasil diagnosa anda menunjukkan</p>
+      <br />
+      <br />
+      <h2>TERINDIKASI DIABETES</h2>
+      <br />
+      <br />
+      <p>Wah Kondisi anda kurang baik, segera pergi ke pusat kesehatan untuk prosedur pemeriksaan lebih lanjut.</p>
+      <br />
+      <button><a href="{{ url_for('home') }}">Back to home</a></button>
+    </div>
+  </div>
+</body>
+
+</html>

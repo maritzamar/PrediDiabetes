@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Prediksi Diabetes</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style_check.css') }}">
+</head>
+
+<body>
+ <div class="login">
+	<h1>Prediksi Diabetes</h1>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">.col-6</div>
+      <div class="col-lg-6">.col-6</div>
+    </div>
+    <div class="row align-items-center">
+    <div class="col-sm-6 col-lg-7">
+    
+    <form action="/predict" method="post">
+        <input type="text" name="Glucose Level" placeholder="Kadar Glukosa" required="required" />
+        <input type="text" name="BloodPressure" placeholder="Tekanan Darah" required="required" />
+        <input type="text" name="BMI" placeholder="Berat Badan" required="required" />
+        <input type="text" name="Age" placeholder="Umur" required="required" />
+		
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Prediksi</button>
+    </form>
+    </div>
+    <div class="col-sm-6 col-lg-7">
+    <div class="result">
+      {{ prediction_text }}
+    </div>
+  </div>
+  </div>
+  </div>
+ </div>
+
+
+</body>
+</html>
